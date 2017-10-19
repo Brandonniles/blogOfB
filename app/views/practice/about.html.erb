@@ -1,0 +1,20 @@
+<style>
+	#color-me-in {
+		background-color: <%= @color %>;
+		height: 300px;
+		width: 400px;
+		color: white;
+	}
+</style>
+
+<div id="color-me-in">
+<h1>Large Text</h1>
+</div>
+
+<%= form_tag index_path do %>
+	<%= text_field_tag :name, nil, placeholder: 'Type your name' %>
+	<%= submit_tag :submit %>
+<% end %>
+
+
+
